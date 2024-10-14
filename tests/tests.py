@@ -3,11 +3,7 @@ from collections import OrderedDict
 from django.test import TestCase
 from django.test.client import RequestFactory
 from django.views.generic import CreateView
-try:
-    from django.utils.encoding import force_str
-except ImportError:
-    # BBB: Django <= 2.2
-    from django.utils.encoding import force_text as force_str
+from django.utils.encoding import force_str
 from django.urls import reverse
 
 from .models import User, Profile, Badge, Book

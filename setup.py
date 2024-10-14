@@ -21,7 +21,7 @@ setup(
     author_email='programmers@fusionbox.com',
     packages=[package for package in find_packages()
               if package.startswith('betterforms')],
-    install_requires=['Django>=1.11'],
+    install_requires=['Django>=3.0'],
     zip_safe=False,
     include_package_data=True,
     classifiers=[
